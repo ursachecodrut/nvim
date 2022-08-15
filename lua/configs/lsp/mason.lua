@@ -14,7 +14,8 @@ local servers = {
   "tsserver",
   "clangd",
   "jdtls",
-  "angularls"
+  "angularls",
+  "gopls"
 }
 
 local settings = {
