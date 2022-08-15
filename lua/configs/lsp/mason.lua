@@ -48,9 +48,19 @@ for _, server in pairs(servers) do
     capabilities = require("configs.lsp.handlers").capabilities,
   }
 
+  if server == 'sumneko_lua' then
+    opts.settings = {
+      Lua = {
+        diagnostics = {
+          globals = { "vim" } -- disable vim global error on lua config
+        }
+      }
+    }
+  end
+
   if server == 'tsserver' then
     -- make js run in every directory
-    opts.root_dir = function ()
+    opts.root_dir = function()
       return vim.loop.cwd()
     end
   end
