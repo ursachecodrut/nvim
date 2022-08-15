@@ -68,7 +68,7 @@ vim.cmd [[silent! set updatetime=300 timeout timeoutlen=500 ttimeout ttimeoutlen
 vim.api.nvim_exec([[ autocmd VimEnter * set noru]], false)
 
 -- Disable Background Color Of The Cursorline
-vim.cmd [[hi CursorLine cterm=underline term=underline ctermbg=NONE guibg=NONE]]
+vim.cmd [[hi CursorLine cterm=underline term=underline ctermbg=NONE bg=NONE]]
 
 -- Remove These ~ ~ ~
 vim.opt.fillchars:append { eob = " " }
