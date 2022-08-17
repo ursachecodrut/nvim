@@ -11,6 +11,12 @@ vim.g.maplocalleader = " "
 -----------------
 -- Normal Mode --
 -----------------
+
+-- Copy Paste --
+map("n", "<c-p>", '"+P', {})
+map("v", "<c-c>", '"*y :let @+=@*<CR>', {})
+
+-- Split
 map("n", "<C-s>", "<cmd>vsplit<CR>", {})
 map("n", "<C-v>", "<cmd>split<CR>", {})
 
@@ -65,6 +71,7 @@ map("n", "<leader>gs", ":Telescope git_status<CR>", {}) -- git status
 -----------------
 -- Insert Mode --
 -----------------
+
 -- Map Escape Key To jj
 map("i", "jj", "<ESC>", {})
 
@@ -74,6 +81,9 @@ map("i", "<Esc>", "<Esc>`^", {})
 -----------------
 -- Visual Mode --
 -----------------
+
+map("v", "<c-c>", '"*y :let @+=@*<CR>', {})
+
 -- Move Text Up And Down
 vim.cmd([[
 nnoremap <C-A-J> :m .+1<CR>==
