@@ -85,7 +85,11 @@ cmp.setup {
     }),
   },
   formatting = {
-    format = lspkind.cmp_format({ with_text = false, maxwidth = 50 })
+    format = lspkind.cmp_format({
+      mode = 'text_symbol',
+      with_text = true,
+      maxwidth = 50,
+    })
   },
   sources = {
     { name = 'nvim_lsp' },

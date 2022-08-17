@@ -24,7 +24,6 @@ local core_modules = {
 
   "configs/lsp", -- LSP
 
-
   ---- Other Utilities --------------------------------
   "utils/utils", -- Utilities
 
@@ -32,7 +31,7 @@ local core_modules = {
 
 -- Using pcall we can handle better any loading issues
 for _, module in ipairs(core_modules) do
-  local ok, err = pcall(require, module)
+  local ok, _ = pcall(require, module)
   if not ok then
     return
   end

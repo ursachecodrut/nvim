@@ -33,8 +33,8 @@ map('n', 'Q', 'q', {})
 map('n', 'q', '<nop>', {})
 
 -- GitSings
-map('n', "<leader>gp", ":Gitsigns preview_hunk<CR>", {})  -- preview_hunk
-map('n', "<leader>gr", ":Gitsigns reset_buffer<CR>", {})  -- reset_buffer
+map('n', "<leader>gp", ":Gitsigns preview_hunk<CR>", {}) -- preview_hunk
+map('n', "<leader>gr", ":Gitsigns reset_buffer<CR>", {}) -- reset_buffer
 
 -- Toggle Alpha Dashboard
 map('n', "<leader>a", ":set laststatus=3<CR> | :Alpha<CR>", {})
@@ -49,19 +49,27 @@ map("n", "yie", ":<C-u>%y<CR>", {})
 map("n", "<leader>u", ":PackerSync<CR>", {})
 
 -- Telescope Mappings
-map("n", "<Leader>b", "<cmd>lua require'telescope.builtin'.buffers(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", {}) -- preview buffers
-map("n", "<Leader>of", "<cmd>lua require'telescope.builtin'.oldfiles(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", {}) -- old files
-map("n", "<Leader>ff", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", {}) -- Find files
+map("n", "<Leader>fb",
+  "<cmd>lua require'telescope.builtin'.buffers(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", {}) -- preview buffers
+map("n", "<Leader>of",
+  "<cmd>lua require'telescope.builtin'.oldfiles(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", {}) -- old files
+map("n", "<Leader>ff",
+  "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes'))<cr>",
+  {}) -- Find files
+map("n", "<Leader>fg",
+  "<cmd>lua require'telescope.builtin'.live_grep(require('telescope.themes'))<cr>",
+  {})
+
 map("n", "<leader>gs", ":Telescope git_status<CR>", {}) -- git status
 
 -----------------
 -- Insert Mode --
 -----------------
 -- Map Escape Key To jj
-map ("i", "jj", "<ESC>", {})
+map("i", "jj", "<ESC>", {})
 
 -- Fix One [Car] behind
-map ("i", "<Esc>", "<Esc>`^", {})
+map("i", "<Esc>", "<Esc>`^", {})
 
 -----------------
 -- Visual Mode --
