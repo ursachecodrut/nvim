@@ -9,6 +9,7 @@ local core_modules = {
 
   "configs/impatient", -- Improve Startup Time
   "configs/colorschemes", -- All Colorschemes
+  "configs/catppuccin", -- All Colorschemes
   "configs/treesitter", -- Syntax Highlighting
   "configs/cmp", -- Completion
   "configs/alpha", -- Wellcome Screen

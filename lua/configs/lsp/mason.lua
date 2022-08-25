@@ -16,7 +16,6 @@ local servers = {
   "jdtls",
   "angularls",
   "gopls",
-  "json-lsp"
 }
 
 local settings = {
