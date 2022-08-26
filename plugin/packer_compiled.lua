@@ -127,11 +127,6 @@ _G.packer_plugins = {
     path = "/home/codrutursache/.local/share/nvim/site/pack/packer/start/impatient.nvim",
     url = "https://github.com/lewis6991/impatient.nvim"
   },
-  ["lsp-inlayhints.nvim"] = {
-    loaded = true,
-    path = "/home/codrutursache/.local/share/nvim/site/pack/packer/start/lsp-inlayhints.nvim",
-    url = "https://github.com/lvimuser/lsp-inlayhints.nvim"
-  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/home/codrutursache/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
@@ -182,11 +177,6 @@ _G.packer_plugins = {
     path = "/home/codrutursache/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
-  ["nvim-dap"] = {
-    loaded = true,
-    path = "/home/codrutursache/.local/share/nvim/site/pack/packer/start/nvim-dap",
-    url = "https://github.com/mfussenegger/nvim-dap"
-  },
   ["nvim-jdtls"] = {
     loaded = true,
     path = "/home/codrutursache/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
@@ -216,6 +206,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/codrutursache/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  ["onedarkpro.nvim"] = {
+    loaded = true,
+    path = "/home/codrutursache/.local/share/nvim/site/pack/packer/start/onedarkpro.nvim",
+    url = "https://github.com/olimorris/onedarkpro.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,

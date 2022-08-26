@@ -64,6 +64,13 @@ return packer.startup(function(use)
   use "norcalli/nvim-colorizer.lua" -- Colors highlighter for neovim
   use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
   use 'pantharshit00/vim-prisma'
+  use "lewis6991/impatient.nvim" -- Speed up loading Lua modules to improve startup time
+  use 'nvim-telescope/telescope.nvim' -- Find, filter, preview, pick. all lua, with telescope
+  use 'nvim-lua/plenary.nvim' -- Plenary, a dependency of telescope
+  use 'windwp/nvim-autopairs'
+  use { "catppuccin/nvim", as = "catppuccin" }
+  use "mfussenegger/nvim-jdtls" -- Java
+  use "olimorris/onedarkpro.nvim" -- Packer
 
   -- LSP and Completion
   use 'neovim/nvim-lspconfig'
@@ -78,17 +85,7 @@ return packer.startup(function(use)
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
-  use "mfussenegger/nvim-dap"
-  use "lvimuser/lsp-inlayhints.nvim"
 
-  use "lewis6991/impatient.nvim" -- Speed up loading Lua modules to improve startup time
-  use 'nvim-telescope/telescope.nvim' -- Find, filter, preview, pick. all lua, with telescope
-  use 'nvim-lua/plenary.nvim' -- Plenary, a dependency of telescope
-  use 'windwp/nvim-autopairs'
-  use { "catppuccin/nvim", as = "catppuccin" }
-
-  -- Java
-  use "mfussenegger/nvim-jdtls"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

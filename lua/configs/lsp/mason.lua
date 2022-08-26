@@ -16,6 +16,7 @@ local servers = {
   "jdtls",
   "angularls",
   "gopls",
+  "emmet_ls"
 }
 
 local settings = {
@@ -64,6 +65,18 @@ for _, server in pairs(servers) do
       return vim.loop.cwd()
     end
   end
+
+  if server == 'emmet_ls' then
+    opts.filetypes = {
+      'html',
+      'typescriptreact',
+      'javascriptreact',
+      'css',
+      'sass',
+      'scss',
+    }
+  end
+
 
   if server == 'jdtls' then
     goto continue

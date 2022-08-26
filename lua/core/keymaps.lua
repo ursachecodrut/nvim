@@ -11,7 +11,6 @@ vim.g.maplocalleader = " "
 -----------------
 -- Normal Mode --
 -----------------
-
 -- Copy Paste --
 map("n", "<c-p>", '"+P', {})
 map("v", "<c-c>", '"*y :let @+=@*<CR>', {})
