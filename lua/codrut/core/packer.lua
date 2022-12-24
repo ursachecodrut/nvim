@@ -47,14 +47,15 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim"
 
   use {
-    'nvim-tree/nvim-tree.lua',
+    "nvim-tree/nvim-tree.lua",
     requires = {
-      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+      "nvim-tree/nvim-web-devicons", -- optional, for file icons
     },
   }
 
-
-  
+  use "nvim-lualine/lualine.nvim"
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use { "nvim-telescope/telescope.nvim", tag = "0.1.x" }
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()

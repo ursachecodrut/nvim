@@ -6,6 +6,8 @@ local modules = {
 
   "codrut/plugins/comment",
   "codrut/plugins/nvim-tree",
+  "codrut/plugins/lualine",
+  "codrut/plugins/telescope",
 }
 
 
