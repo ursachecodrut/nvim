@@ -44,8 +44,15 @@ return packer.startup(function(use)
   use "tpope/vim-surround" 
   use "vim-scripts/ReplaceWithRegister"
   
+  use "numToStr/Comment.nvim"
 
-  use 'numToStr/Comment.nvim'
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+  }
+
 
   
 

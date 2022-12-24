@@ -84,6 +84,16 @@ _G.packer_plugins = {
     path = "/home/codrut/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/codrut/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/codrut/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["onedarkpro.nvim"] = {
     loaded = true,
     path = "/home/codrut/.local/share/nvim/site/pack/packer/start/onedarkpro.nvim",

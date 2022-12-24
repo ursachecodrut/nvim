@@ -5,6 +5,7 @@ local modules = {
   "codrut/core/keymaps",
 
   "codrut/plugins/comment",
+  "codrut/plugins/nvim-tree",
 }
 
 
