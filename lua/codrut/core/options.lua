@@ -1,5 +1,6 @@
 local opt = vim.opt
 
+vim.opt.completeopt="menu,menuone,noselect"
 -- swap
 opt.swapfile = false -- disable swap files
 

@@ -1,20 +1,10 @@
-local modules = {
-  "codrut/core/options",
-  "codrut/core/packer",
-  "codrut/core/colorscheme",
-  "codrut/core/keymaps",
+require("codrut/core/options")
+require("codrut/core/packer")
+require("codrut/core/colorscheme")
+require("codrut/core/keymaps")
 
-  "codrut/plugins/comment",
-  "codrut/plugins/nvim-tree",
-  "codrut/plugins/lualine",
-  "codrut/plugins/telescope",
-}
-
-
-for _, module in ipairs(modules) do
-	local ok, _ = pcall(require, module)
-	if not ok then
-    print("Something wrong in " .. module)
-    return
-	end
-end
+require("codrut/plugins/comment")
+require("codrut/plugins/nvim-tree")
+require("codrut/plugins/lualine")
+require("codrut/plugins/telescope")
+require("codrut/plugins/nvim-cmp")
