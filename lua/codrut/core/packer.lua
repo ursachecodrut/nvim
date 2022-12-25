@@ -32,7 +32,11 @@ end
 -- Install your plugins here
 return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- A use-package inspired plugin manager for Neovim
+
 	use("olimorris/onedarkpro.nvim") -- Color scheme
+	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
+	use({ "catppuccin/nvim", as = "catppuccin" })
+
 	use("nvim-lua/plenary.nvim")
 	use("christoomey/vim-tmux-navigator") -- navigation
 	use("tpope/vim-surround")
@@ -88,6 +92,11 @@ return packer.startup(function(use)
 
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+
+	-- cool plugins
+	use("norcalli/nvim-colorizer.lua") -- Colors highlighter for neovim
+	use("akinsho/nvim-toggleterm.lua") -- usein to easily toggle a terminal
+	use("goolord/alpha-nvim") -- Lua powered greeter like vim-startify / dashboard-nvim
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

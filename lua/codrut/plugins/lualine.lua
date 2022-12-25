@@ -1,13 +1,13 @@
 local status, lualine = pcall(require, "lualine")
 if not status then
-  print("Error while importing lualine")
-  return
+	print("Error while importing lualine")
+	return
 end
 
-local lualine_onedark = require("lualine.themes.onedark")
+local lualine_theme = require("lualine.themes.catppuccin")
 
 lualine.setup({
-  options = {
-    theme = lualine_onedark
-  }
+	options = {
+		theme = lualine_theme,
+	},
 })
