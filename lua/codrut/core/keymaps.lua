@@ -1,11 +1,11 @@
 local map = vim.keymap.set
-local opts = { noremap = true, silent = true }
-local silent = { silent = true }
+-- local opts = { noremap = true, silent = true }
+-- local silent = { silent = true }
 
 -- Remap space as leader key 
 map("", "<Space>", "<Nop>", {})
 vim.g.mapleader = " "
-vim.g.maplocalleader = " " 
+vim.g.maplocalleader = " "
 
 -- general keymaps
 map("i", "jk", "<ESC>") -- exit insert mode with jk
