@@ -98,6 +98,8 @@ return packer.startup(function(use)
 	use("akinsho/nvim-toggleterm.lua") -- usein to easily toggle a terminal
 	use("goolord/alpha-nvim") -- Lua powered greeter like vim-startify / dashboard-nvim
 
+	use("github/copilot.vim")
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end

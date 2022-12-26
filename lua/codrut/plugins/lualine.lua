@@ -9,5 +9,9 @@ local lualine_theme = require("lualine.themes.catppuccin")
 lualine.setup({
 	options = {
 		theme = lualine_theme,
+		disabled_filetypes = {
+			"NvimTree",
+			"packer",
+		},
 	},
 })
