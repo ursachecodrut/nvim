@@ -1,39 +1,21 @@
-local core_modules = {
+require("codrut/core/options")
+require("codrut/core/packer")
+require("codrut/core/colorscheme")
+require("codrut/core/keymaps")
 
-  ---- Core Settings ----------------------------------
-  "core/plugins", -- Plugins + Packer Config
-  "core/keymaps", -- Custom Keymaps
-  "core/options", -- General Options
+require("codrut/plugins/comment")
+require("codrut/plugins/nvim-tree")
+require("codrut/plugins/lualine")
+require("codrut/plugins/telescope")
+require("codrut/plugins/nvim-cmp")
+require("codrut/plugins/treesitter")
+require("codrut/plugins/autopairs")
+require("codrut/plugins/gitsigns")
+require("codrut/plugins/colorizer")
+require("codrut/plugins/toggleterm")
+require("codrut/plugins/alpha")
 
-  ---- Plugin Configurations --------------------------
-
-  "configs/impatient", -- Improve Startup Time
-  "configs/colorschemes", -- All Colorschemes
-  "configs/catppuccin", -- All Colorschemes
-  "configs/treesitter", -- Syntax Highlighting
-  "configs/cmp", -- Completion
-  "configs/alpha", -- Wellcome Screen
-  "configs/nvimtree", -- File Explorer
-  "configs/gitsigns", -- Git Integration
-  "configs/commentary", -- Easily Comment Lines
-  "configs/lualine", -- Status Line
-  "configs/colorizer", -- Colors Highlighter
-  "configs/toggleterm", -- Floating Terminal
-  "configs/telescope", -- Fuzzy finder
-  "configs/autopairs", -- Autopairs
-  "configs/bufferline", -- Bufferline
-
-  "configs/lsp", -- LSP
-
-  ---- Other Utilities --------------------------------
-  "utils/utils", -- Utilities
-
-}
-
--- Using pcall we can handle better any loading issues
-for _, module in ipairs(core_modules) do
-  local ok, _ = pcall(require, module)
-  if not ok then
-    return
-  end
-end
+require("codrut/plugins/lsp/mason")
+require("codrut/plugins/lsp/lspsaga")
+require("codrut/plugins/lsp/lspconfig")
+require("codrut/plugins/lsp/null-ls")
