@@ -1,11 +1,21 @@
 local map = vim.keymap.set
--- local opts = { noremap = true, silent = true }
+local opts = { noremap = true, silent = true }
 -- local silent = { silent = true }
 
 -- Remap space as leader key
 map("", "<Space>", "<Nop>", {})
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+
+-- zz centers your current view <3
+
+-- Better vertial movement
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-u>", "<C-u>zz")
+
+-- Better search
+map("n", "n", "nzzzv")
+map("n", "N", "nzzzv")
 
 -- general keymaps
 map("i", "jk", "<ESC>") -- exit insert mode with jk
