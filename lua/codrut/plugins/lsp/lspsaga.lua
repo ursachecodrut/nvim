@@ -4,6 +4,9 @@ if not saga_status then
 end
 
 saga.setup({
+	-- use a border with lspsaga
+	border_style = "round",
+
 	-- keybinds for navigation in lspsaga window
 	move_in_saga = { prev = "<C-k>", next = "<C-j>" },
 	-- use enter to open file with finder
