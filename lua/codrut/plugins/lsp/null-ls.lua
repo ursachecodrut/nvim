@@ -14,7 +14,15 @@ null_ls.setup({
 	-- setup formatters & linters
 	sources = {
 		--  to disable file types use
-		formatting.prettier, -- js/ts formatter
+		formatting.prettier.with({
+			filetypes = {
+				"javascript",
+				"typescript",
+				"typescriptreact",
+				"javascriptreact",
+				"astro",
+			},
+		}), -- js/ts formatter
 		formatting.stylua, -- lua formatter
 		formatting.clang_format,
 		-- formatting.prismaFmt.with({
