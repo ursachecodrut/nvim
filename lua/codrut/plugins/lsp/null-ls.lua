@@ -22,6 +22,7 @@ null_ls.setup({
 				"javascriptreact",
 				"astro",
 			},
+			extra_args = { "--single-quote", "--jsx-single-quote" },
 		}), -- js/ts formatter
 		formatting.stylua, -- lua formatter
 		formatting.clang_format,
