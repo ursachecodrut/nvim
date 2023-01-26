@@ -91,12 +91,15 @@ return packer.startup(function(use)
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
 	-- git integration
+	use("tpope/vim-fugitive")
+	use("tpope/vim-rhubarb")
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
 	-- cool plugins
 	use("norcalli/nvim-colorizer.lua") -- Colors highlighter for neovim
 	use("akinsho/nvim-toggleterm.lua") -- usein to easily toggle a terminal
 	use("goolord/alpha-nvim") -- Lua powered greeter like vim-startify / dashboard-nvim
+	use("lukas-reineke/indent-blankline.nvim")
 
 	use("github/copilot.vim")
 

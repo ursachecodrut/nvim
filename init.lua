@@ -14,6 +14,7 @@ require("codrut/plugins/gitsigns")
 require("codrut/plugins/colorizer")
 require("codrut/plugins/toggleterm")
 require("codrut/plugins/alpha")
+require("codrut/plugins/indent-blankline")
 require("codrut/plugins/copilot")
 
 require("codrut/plugins/lsp/mason")
