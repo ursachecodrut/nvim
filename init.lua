@@ -18,6 +18,5 @@ require("codrut/plugins/indent-blankline")
 require("codrut/plugins/copilot")
 
 require("codrut/plugins/lsp/mason")
-require("codrut/plugins/lsp/lspsaga")
 require("codrut/plugins/lsp/lspconfig")
 require("codrut/plugins/lsp/null-ls")

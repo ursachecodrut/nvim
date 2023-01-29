@@ -15,5 +15,6 @@ indent.setup({
 		"lspinfo",
 		"TelescopePrompt",
 		"TelescopeResults",
+		"NvimTree",
 	},
 })
