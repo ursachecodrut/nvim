@@ -26,10 +26,13 @@ null_ls.setup({
 		}), -- js/ts formatter
 		formatting.stylua, -- lua formatter
 		formatting.clang_format,
+		formatting.mix,
+		-- formatting.credo,
 		-- formatting.prismaFmt.with({
 		-- 	extra_args = { "format", "-i" },
 		-- }),
 		null_ls.builtins.formatting.prismaFmt,
+		formatting.black,
 
 		diagnostics.eslint_d.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
@@ -53,6 +56,7 @@ null_ls.setup({
 							return client.name == "null-ls"
 						end,
 						bufnr = bufnr,
+						async = true,
 					})
 				end,
 			})
