@@ -74,6 +74,11 @@ lspconfig["cssls"].setup({
 	on_attach = on_attach,
 })
 
+lspconfig["eslint"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 -- configure tailwindcss server
 lspconfig["tailwindcss"].setup({
 	capabilities = capabilities,
@@ -107,6 +112,11 @@ lspconfig["marksman"].setup({
 })
 
 lspconfig["pylsp"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+lspconfig["asm_lsp"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })

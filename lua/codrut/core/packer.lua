@@ -48,9 +48,27 @@ return packer.startup(function(use)
 			"nvim-tree/nvim-web-devicons", -- optional, for file icons
 		},
 	})
+
 	use("nvim-lualine/lualine.nvim")
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 	use({ "nvim-telescope/telescope.nvim", tag = "0.1.x" })
+
+	-- install without yarn or npm
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+	})
+
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = "cd app && npm install",
+		setup = function()
+			vim.g.mkdp_filetypes = { "markdown" }
+		end,
+		ft = { "markdown" },
+	})
 
 	-- autocompletion
 	use("hrsh7th/nvim-cmp") -- completion plugin
