@@ -33,7 +33,6 @@ end
 return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- A use-package inspired plugin manager for Neovim
 
-	use("olimorris/onedarkpro.nvim") -- Color scheme
 	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 	use({ "catppuccin/nvim", as = "catppuccin" })
 
@@ -52,14 +51,6 @@ return packer.startup(function(use)
 	use("nvim-lualine/lualine.nvim")
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 	use({ "nvim-telescope/telescope.nvim", tag = "0.1.x" })
-
-	-- install without yarn or npm
-	use({
-		"iamcco/markdown-preview.nvim",
-		run = function()
-			vim.fn["mkdp#util#install"]()
-		end,
-	})
 
 	use({
 		"iamcco/markdown-preview.nvim",
