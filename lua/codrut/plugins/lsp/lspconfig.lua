@@ -111,7 +111,7 @@ lspconfig["marksman"].setup({
 	on_attach = on_attach,
 })
 
-lspconfig["pylsp"].setup({
+lspconfig["pyright"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })

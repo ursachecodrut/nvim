@@ -28,10 +28,6 @@ null_ls.setup({
 		formatting.stylua, -- lua formatter
 		formatting.clang_format,
 		formatting.mix,
-		-- formatting.credo,
-		-- formatting.prismaFmt.with({
-		-- 	extra_args = { "format", "-i" },
-		-- }),
 		null_ls.builtins.formatting.prismaFmt,
 		formatting.black,
 
