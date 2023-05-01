@@ -102,6 +102,27 @@ return packer.startup(function(use)
 	use("goolord/alpha-nvim") -- Lua powered greeter like vim-startify / dashboard-nvim
 	use("lukas-reineke/indent-blankline.nvim")
 
+	-- markdown
+	use({
+		"ellisonleao/glow.nvim",
+		config = function()
+			require("glow").setup()
+		end,
+	})
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+	})
+
+	-- Copilot
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+	})
 	use("github/copilot.vim")
 
 	if PACKER_BOOTSTRAP then
