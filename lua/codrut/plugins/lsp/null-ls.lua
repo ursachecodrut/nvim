@@ -21,6 +21,7 @@ null_ls.setup({
 				"typescriptreact",
 				"javascriptreact",
 				"astro",
+				"markdown",
 			},
 			extra_args = { "--single-quote", "--jsx-single-quote" },
 		}), -- js/ts formatter
