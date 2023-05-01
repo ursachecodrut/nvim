@@ -16,5 +16,6 @@ indent.setup({
 		"TelescopePrompt",
 		"TelescopeResults",
 		"NvimTree",
+		"alpha",
 	},
 })

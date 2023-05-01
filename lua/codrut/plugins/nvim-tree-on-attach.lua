@@ -1,14 +1,19 @@
-local status, nvimtree = pcall(require, "nvim-tree")
-if not status then
-	print("Error to import nvim-tree")
-	return
-end
-
-vim.g.loeaded = 1
-vim.g.loeaded_netrwPlugin = 1
-
--- change color for arrows in tree to light blue
-vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
+--
+-- This function has been generated from your
+--   view.mappings.list
+--   view.mappings.custom_only
+--   remove_keymaps
+--
+-- You should add this function to your configuration and set on_attach = on_attach in the nvim-tree setup call.
+--
+-- Although care was taken to ensure correctness and completeness, your review is required.
+--
+-- Please check for the following issues in auto generated content:
+--   "Mappings removed" is as you expect
+--   "Mappings migrated" are correct
+--
+-- Please see https://github.com/nvim-tree/nvim-tree.lua/wiki/Migrating-To-on_attach for assistance in migrating.
+--
 
 local function on_attach(bufnr)
 	local api = require("nvim-tree.api")
@@ -84,41 +89,3 @@ local function on_attach(bufnr)
 	vim.keymap.set("n", "v", api.node.open.vertical, opts("Open: Vertical Split"))
 	vim.keymap.set("n", "H", api.node.open.horizontal, opts("Open: Horizontal Split"))
 end
-
-nvimtree.setup({
-	on_attach = on_attach,
-	renderer = {
-		root_folder_modifier = ":t",
-		icons = {
-			glyphs = {
-				default = "",
-				symlink = "",
-				folder = {
-					arrow_closed = "", -- arrow when folder is closed
-					arrow_open = "", -- arrow when folder is open
-					-- arrow_open = "",
-					-- arrow_closed = "",
-					default = "",
-					open = "",
-					empty = "",
-					empty_open = "",
-					symlink = "",
-					symlink_open = "",
-				},
-				git = {
-					unstaged = "",
-					staged = "S",
-					unmerged = "",
-					renamed = "➜",
-					untracked = "U",
-					deleted = "",
-					ignored = "◌",
-				},
-			},
-		},
-	},
-	view = {
-		side = "right",
-		width = 50,
-	},
-})
