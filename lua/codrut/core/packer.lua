@@ -32,10 +32,7 @@ end
 -- Install your plugins here
 return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- A use-package inspired plugin manager for Neovim
-
-	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 	use({ "catppuccin/nvim", as = "catppuccin" })
-
 	use("nvim-lua/plenary.nvim")
 	use("christoomey/vim-tmux-navigator") -- navigation
 	use("tpope/vim-surround")
@@ -44,7 +41,7 @@ return packer.startup(function(use)
 	use({
 		"nvim-tree/nvim-tree.lua",
 		requires = {
-			"nvim-tree/nvim-web-devicons", -- optional, for file icons
+			"nvim-tree/nvim-web-devicons",
 		},
 	})
 
@@ -52,20 +49,11 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 	use({ "nvim-telescope/telescope.nvim", tag = "0.1.x" })
 
-	use({
-		"iamcco/markdown-preview.nvim",
-		run = "cd app && npm install",
-		setup = function()
-			vim.g.mkdp_filetypes = { "markdown" }
-		end,
-		ft = { "markdown" },
-	})
-
 	-- autocompletion
-	use("hrsh7th/nvim-cmp") -- completion plugin
-	use("hrsh7th/cmp-buffer") -- source for text in buffer
-	use("hrsh7th/cmp-path") -- source for file system paths
-	use("hrsh7th/cmp-nvim-lsp") -- source for file system paths
+	use("hrsh7th/nvim-cmp")
+	use("hrsh7th/cmp-buffer")
+	use("hrsh7th/cmp-path")
+	use("hrsh7th/cmp-nvim-lsp")
 
 	-- snippets
 	use("L3MON4D3/LuaSnip") -- snippet engine
