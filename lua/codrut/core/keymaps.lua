@@ -37,9 +37,6 @@ map("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 map("n", "<leader>tn", ":tabn<CR>") -- go to next tab
 map("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
 
--- Nvim Tree
-map("n", "<leader>e", ":NvimTreeToggle<CR>")
-
 -- Telescope
 map("n", "<leader>ff", ":Telescope find_files<CR>")
 map("n", "<leader>fs", ":Telescope live_grep<CR>")
