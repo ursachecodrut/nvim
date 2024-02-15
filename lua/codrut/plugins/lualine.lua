@@ -8,9 +8,7 @@ return {
 		lualine.setup({
 			options = {
 				theme = "catppuccin",
-				disable_filetypes = {
-					"NvimTree",
-				},
+				extensions = { "nvim-tree" },
 			},
 			sections = {
 				lualine_x = {

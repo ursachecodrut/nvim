@@ -8,7 +8,6 @@
 2. [Nerd Font][nerd-fonts] as your terminal font
 3. Ripgrep installed (for telescope fast searching)
 4. Make sure delete the old neovim config from `$HOME/config/nvim`
-5. Love, passion and patience for Neovim <3
 
 ### Installation
 
