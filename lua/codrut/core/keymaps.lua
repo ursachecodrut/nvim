@@ -36,10 +36,3 @@ map("n", "<leader>to", ":tabnew<CR>") -- open new tab
 map("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 map("n", "<leader>tn", ":tabn<CR>") -- go to next tab
 map("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
-
--- Telescope
-map("n", "<leader>ff", ":Telescope find_files<CR>")
-map("n", "<leader>fs", ":Telescope live_grep<CR>")
-map("n", "<leader>fw", ":Telescope grep_string<CR>")
-map("n", "<leader>fb", ":Telescope buffers<CR>")
-map("n", "<leader>fh", ":Telescope help_tags<CR>")
