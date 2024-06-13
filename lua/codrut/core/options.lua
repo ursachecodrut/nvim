@@ -52,3 +52,6 @@ opt.updatetime = 0 -- faster completion
 
 vim.cmd([[autocmd BufEnter * set formatoptions-=cro]])
 vim.cmd([[autocmd BufEnter * setlocal formatoptions-=cro]])
+
+-- set backupcopy to "yes"
+opt.backupcopy = "yes"
