@@ -13,10 +13,6 @@ vim.g.maplocalleader = " "
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 
--- Better search
-map("n", "n", "nzzzv")
-map("n", "N", "nzzzv")
-
 -- general keymaps
 map("i", "jk", "<ESC>") -- exit insert mode with jk
 map("n", "<leader>nh", ":nohl<CR>") -- disable highlight after search
@@ -36,3 +32,5 @@ map("n", "<leader>to", ":tabnew<CR>") -- open new tab
 map("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 map("n", "<leader>tn", ":tabn<CR>") -- go to next tab
 map("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
+
+map("n", "<leader><leader>x", "<cmd>source %<CR>") -- source current file
