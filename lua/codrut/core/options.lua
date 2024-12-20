@@ -11,7 +11,6 @@ opt.background = "dark" -- tell vim what the background color looks like
 opt.signcolumn = "yes"
 
 -- line numbers
-opt.relativenumber = true -- Vim's absolute, relative and hybrid line numbers
 opt.number = true
 
 -- tabs & indentation

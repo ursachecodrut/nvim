@@ -12,6 +12,7 @@ return {
 			typescriptreact = { "eslint_d" },
 			svelte = { "eslint_d" },
 			terraform = { "tfsec" },
+			python = { "ruff" },
 		}
 
 		lint.linters.eslint_d = {

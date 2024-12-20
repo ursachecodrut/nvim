@@ -139,6 +139,38 @@ return {
 			on_attach = on_attach,
 		})
 
+		-- haskell language server
+		lspconfig["hls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
+		-- helm language server
+		lspconfig["helm_ls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			settings = {
+				["helm-ls"] = {
+					yamlls = {
+						enable = true,
+						path = "yaml-language-server",
+						logLevel = "debug",
+						config = {
+							schemas = {
+								["/Users/cursache/.config/nvim/schemas/rollout.schema.json"] = "k8s/helm/**/values.yaml",
+							},
+						},
+					},
+				},
+			},
+		})
+
+		-- ruff language server for python
+		lspconfig["ruff"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
 		-- configure lua server (with special settings)
 		lspconfig["lua_ls"].setup({
 			capabilities = capabilities,

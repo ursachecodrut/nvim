@@ -15,12 +15,12 @@ return {
 				css = { "prettier" },
 				html = { "prettier" },
 				json = { "prettier" },
-				yaml = { "prettier" },
 				markdown = { "prettier" },
 				graphql = { "prettier" },
 				lua = { "stylua" },
 				terraform = { "terraform" },
 				latex = { "latexindent" },
+				python = { "ruff" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
