@@ -2,21 +2,17 @@ return {
 	"neovim/nvim-lspconfig",
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
-		"hrsh7th/cmp-nvim-lsp",
 		"nvimdev/lspsaga.nvim",
 		"saghen/blink.cmp",
 	},
 	config = function()
-		-- import lspconfig plugin
 		local lspconfig = require("lspconfig")
 
-		-- import cmp-nvim-lsp plugin
-		local cmp_nvim_lsp = require("cmp_nvim_lsp")
-
 		local keymap = vim.keymap -- for conciseness
-
 		local opts = { noremap = true, silent = true }
-		local on_attach = function(client, bufnr)
+
+		---@diagnostic disable-next-line: unused-local
+		local on_attach = function(_client, bufnr)
 			opts.buffer = bufnr
 
 			opts.desc = "Show LSP references"
@@ -66,7 +62,6 @@ return {
 		local capabilities = require("blink.cmp").get_lsp_capabilities()
 
 		-- Change the Diagnostic symbols in the sign column (gutter)
-		-- (not in youtube nvim video)
 		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
 		for type, icon in pairs(signs) do
 			local hl = "DiagnosticSign" .. type
